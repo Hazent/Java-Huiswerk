@@ -2,26 +2,34 @@ package Klassen;
 
 public class Persoon {
     private String naam;
-    private int lengte;
+    private int leeftijd;
 
-    public Persoon(String _naam, int _lengte){
+    public Persoon(String _naam, int _leeftijd){
         this.naam = _naam;
-        this.lengte = _lengte;
+        this.leeftijd = _leeftijd;
     }
 
     public String getNaam() {
         return naam;
     }
 
-    public int getLengte() {
-        return lengte;
-    }
-
     public void setNaam(String naam) {
         this.naam = naam;
     }
 
-    public void setLengte(int lengte) {
-        this.lengte = lengte;
+    public int getLeeftijd() {
+        return leeftijd;
+    }
+
+    public void setLeeftijd(int leeftijd) {
+        this.leeftijd = leeftijd;
+    }
+
+    public String toString(){
+        return "Dit is "+naam+", leeftijd "+leeftijd;
+    }
+
+    public void jarig(){
+        leeftijd++;
     }
 }
